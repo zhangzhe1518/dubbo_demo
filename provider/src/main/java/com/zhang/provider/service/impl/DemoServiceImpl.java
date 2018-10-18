@@ -1,23 +1,25 @@
 package com.zhang.provider.service.impl;
 
+import com.alibaba.dubbo.config.annotation.Service;
 import com.zhang.provider.service.DemoService;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Component;
 
 /**
  * @program: dubbo测试服务接口
  * @description:
  * @author: 寻。
- * @create: 2018-05-19 23:25
  **/
-@Service
+@Component
+@Service(group = "dubbo-demo", version = "2.0.0")
 public class DemoServiceImpl implements DemoService{
 
     /**
-     * 测试方法
+     * sayHello
+     * @param hello
      * @return
      */
     @Override
-    public String demo() {
-        return "恭喜：dubbo服务接口调用成功。。。";
+    public String sayHello(String hello) {
+        return hello+"：dubbo服务接口调用成功。。。";
     }
 }
