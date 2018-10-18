@@ -8,4 +8,3 @@ dubbo:
   protocol:
     name: dubbo
     port: 20880
-  scan: com.zhang.provider.service
