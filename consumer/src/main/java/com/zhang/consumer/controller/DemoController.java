@@ -20,6 +20,11 @@ public class DemoController {
     @Reference(group = "dubbo-demo", version = "2.0.0")
     private DemoService demoService;
 
+    /**
+     * sayHello
+     * @param hello
+     * @return
+     */
     @GetMapping("/sayHello/{hello}")
     @ResponseBody
     public String sayHello(@PathVariable String hello){
