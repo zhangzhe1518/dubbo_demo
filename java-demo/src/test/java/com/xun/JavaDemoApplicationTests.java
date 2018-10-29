@@ -1,4 +1,4 @@
-package com.xun.javademo;
+package com.xun;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
